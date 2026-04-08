@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ArrayListOperations {
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -13,15 +13,11 @@ public class ArrayListOperations {
 
         String searchItem = sc.next();
 
-        // Sort alphabetically
         Collections.sort(items);
 
-        // Check if item exists
-        boolean found = items.contains(searchItem);
-
-        // Output
         System.out.println("Sorted Items: " + items);
-        if (found)
+
+        if (items.contains(searchItem))
             System.out.println("Found");
         else
             System.out.println("Not Found");
